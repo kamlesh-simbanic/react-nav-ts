@@ -3,8 +3,8 @@ import NavItem from "./NavItem";
 import NavLink from "./NavLink";
 
 const Dropdown = (props) => {
-  const [show, setShow] = useState(true);
-  console.log(props);
+  const [show, setShow] = useState(false);
+
   return (
     <>
       <NavLink
