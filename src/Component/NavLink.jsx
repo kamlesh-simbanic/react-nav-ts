@@ -14,8 +14,8 @@ const NavLink = (props) => {
   );
 };
 
-// NavLink.defaultProps = {
-//   color: "primary",
-// };
+NavLink.defaultProps = {
+  color: "primary",
+};
 
 export default NavLink;
