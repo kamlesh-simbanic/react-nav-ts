@@ -3,12 +3,11 @@ import NavLink from "./NavLink";
 
 const Dropdown = (props) => {
   const [show, setShow] = useState(false);
-
   return (
     <>
       <NavLink
         label={props.label}
-        color="white"
+        color={props.color}
         onClick={() => setShow(!show)}
       />
       <ul className={`${show ? "show" : ""}  collapse  nav flex-column ms-2`}>
@@ -16,6 +15,10 @@ const Dropdown = (props) => {
       </ul>
     </>
   );
+};
+
+Dropdown.defaultProps = {
+  color: "white",
 };
 
 export default Dropdown;

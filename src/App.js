@@ -30,7 +30,14 @@ const App = () => {
                   <NavLink label="Completd Orders" url="/" />
                 </NavItem>
                 <NavItem>
-                  <NavLink label="Pending Orders" url="/" />
+                  <Dropdown label="Pending Order" color="primary">
+                    <NavItem>
+                      <NavLink label="Initited Orders" url="/" color="white" />
+                    </NavItem>
+                    <NavItem>
+                      <NavLink label="Ongoing Orders" url="/" color="white" />
+                    </NavItem>
+                  </Dropdown>
                 </NavItem>
               </Dropdown>
 
