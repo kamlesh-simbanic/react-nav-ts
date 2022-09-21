@@ -6,25 +6,26 @@ import NavLink from "./Component/NavLink";
 
 const App = () => {
   return (
-    <div class="container-fluid">
-      <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-          <div class="d-flex flex-column align-items-center align-items-sm-start min-vh-100">
+    <div className="container-fluid">
+      <div className="row flex-nowrap">
+        <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div className="d-flex flex-column align-items-center align-items-sm-start min-vh-100">
             <a
               href="/"
-              class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+              className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
             >
-              <span class="fs-5 d-none d-sm-inline">Menu</span>
+              <span className="fs-5 d-none d-sm-inline">Menu</span>
             </a>
 
             <ul
-              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
               id="menu"
             >
               <NavLink label="Home" url="/" color="white" />
 
               <NavLink label="Dashboard" url="/" color="white" />
 
+              {/* Nested Dropdown */}
               <Dropdown label="Orders" color="white">
                 <NavItem>
                   <NavLink label="Completd Orders" url="/" />
@@ -41,6 +42,7 @@ const App = () => {
                 </NavItem>
               </Dropdown>
 
+              {/* Dropdown */}
               <Dropdown label="Components" color="white">
                 <NavItem>
                   <NavLink label="Label" url="/" />
@@ -50,6 +52,7 @@ const App = () => {
                 </NavItem>
               </Dropdown>
 
+              {/* Dropdown */}
               <Dropdown label="Products" color="white">
                 <NavItem>
                   <NavLink label="Product 1" url="/" />

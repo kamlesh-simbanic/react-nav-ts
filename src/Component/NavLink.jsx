@@ -8,7 +8,8 @@ const NavLink = (props) => {
         {...(props.url ? { href: props.url } : { onClick: props.onClick })}
         className={`nav-link px-0 align-middle  text-${props.color} `}
       >
-        <span class=" d-none d-sm-inline">{props.label}</span>{" "}
+        <span className=" d-none d-sm-inline">{props.label}</span>{" "}
+        {props.children}
       </a>
     </>
   );
