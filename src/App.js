@@ -23,23 +23,23 @@ const App = () => {
             >
               <NavLink label="Home" url="/" color="white" />
 
-              <Dropdown label="Dashboard" color="white">
+              <NavLink label="Dashboard" url="/" color="white" />
+
+              <Dropdown label="Orders" color="white">
                 <NavItem>
-                  <NavLink label="Item 1" url="/" />
+                  <NavLink label="Completd Orders" url="/" />
                 </NavItem>
                 <NavItem>
-                  <NavLink label="Item 2" url="/" />
+                  <NavLink label="Pending Orders" url="/" />
                 </NavItem>
               </Dropdown>
 
-              <NavLink label="Orders" url="/" color="white" />
-
-              <Dropdown label="Bootstrap" color="white">
+              <Dropdown label="Components" color="white">
                 <NavItem>
-                  <NavLink label="Item 1" url="/" />
+                  <NavLink label="Label" url="/" />
                 </NavItem>
                 <NavItem>
-                  <NavLink label="Item 2" url="/" />
+                  <NavLink label="Input Form" url="/" />
                 </NavItem>
               </Dropdown>
 

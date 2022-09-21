@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavItem from "./NavItem";
 import NavLink from "./NavLink";
 
 const Dropdown = (props) => {
