@@ -6,9 +6,8 @@ const NavLink = (props) => {
       <a
         role={"button"}
         {...(props.url != undefined
-          ? { href: { ...props.url } }
-          : { onClick: { ...props.onClick } })}
-        onClick={props.onClick}
+          ? { href: props.url }
+          : { onClick: props.onClick })}
         className={`nav-link px-0 align-middle  text-${props.color} `}
       >
         <span class=" d-none d-sm-inline">{props.label}</span>{" "}
